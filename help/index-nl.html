@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Markdown referentiepagina</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize-skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="twelve columns">
+            <p><b>Markdown</b> is een eenvoudige manier om te tekst op te maken die er geweldig uitziet op elk apparaat. Het doet niets geavanceerds zoals het veranderen van lettertype, -grootte of kleur &mdash; slechts het noodzakelijke, met de toetsenbord tekens die je al kent. </p>
+        </div>
+
+        <div class="twelve columns center">
+            <a class="button button-primary" href="tutorial/" style="padding: 0 15px">Probeer onze 10 minuten durende markdown handleiding</a>
+        </div>
+
+        <div class="twelve columns center">
+
+            <table class="markdown-reference">
+                <thead>
+                    <tr>
+                        <th>Typ</th>
+                        <th class="second-example">Of</th>
+                        <th>&hellip; voor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="preformatted">*Cursief*</td>
+                        <td class="preformatted second-example">Cursief</td>
+                        <td><em>Cursief</em></td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">**Vet**</td>
+                        <td class="preformatted second-example">__Vet__</td>
+                        <td><strong>Vet</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            # Kop 1
+                        </td>
+                        <td class="preformatted second-example">
+                            Kop 1<br/>
+                            =========
+                        </td>
+                        <td>
+                            <h1 class="smaller-h1">Kop 1</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ## Kop 2
+                        </td>
+                        <td class="preformatted second-example">
+                            Kop 2<br/>
+                            ---------
+                        </td>
+                        <td>
+                            <h2 class="smaller-h2">Kop 2</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            [Link](http://a.com)
+                        </td>
+                        <td class="preformatted second-example">
+                            [Link][1]<br/>
+                            &#8942;<br/>
+                            [1]: http://b.org
+                        </td>
+                        <td><a href="https://commonmark.org/">Link</a></td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ![Afbeelding](http://url/a.png)
+                        </td>
+                        <td class="preformatted second-example">
+                            ![Afbeelding][1]<br/>
+                            &#8942;<br/>
+                            [1]: http://url/b.jpg
+                        </td>
+                        <td>
+                            <img src="images/favicon.png" width="36" height="36" alt="Markdown"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            &gt; Blokcitaat
+                        </td>
+                        <td class="preformatted second-example">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <blockquote>Blokcitaat</blockquote>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            <p>
+                                * Lijst<br/>
+                                * Lijst<br/>
+                                * Lijst
+                            </p>
+                        </td>
+                        <td class="preformatted second-example">
+                            <p>
+                                - Lijst<br/>
+                                - Lijst<br/>
+                                - Lijst<br/>
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Lijst</li>
+                                <li>Lijst</li>
+                                <li>Lijst</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            <p>
+                                1. Een<br/>
+                                2. Twee<br/>
+                                3. Drie
+                            </p>
+                        </td>
+                        <td class="preformatted second-example">
+                            <p>
+                                1) Een<br/>
+                                2) Twee<br/>
+                                3) Drie
+                            </p>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Een</li>
+                                <li>Twee</li>
+                                <li>Drie</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            Horizontale lijn:<br/>
+                            <br/>
+                            ---
+                        </td>
+                        <td class="preformatted second-example">
+                            Horizontale lijn:<br/>
+                            <br/>
+                            ***
+                        </td>
+                        <td>
+                            Horizontale lijn:
+                            <hr class="custom-hr" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            `Code in een regel` met accent grave
+                            </td>
+                        <td class="preformatted second-example">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <code class="preformatted">Code in een regel</code> met accent grave
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="preformatted">
+                            ```<br/>
+                            # code blok<br/>
+                            typ '3 accent grave's of'<br/>
+                            typ 'een insprining van 4 spaties'<br/>
+                            ```
+                        </td>
+                        <td class="preformatted second-example">
+                            <span class="spaces">····</span># code blok<br/>
+                            <span class="spaces">····</span>typ '3 accent grave's of'<br/>
+                            <span class="spaces">····</span>typ 'een insprining van 4 spaties'
+                        </td>
+                        <td>
+                            <div class="code-block">
+                                # code blok
+                                <br/> typ '3 accent grave's of'
+                                <br/> typ 'een insprining van 4 spaties'
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="twelve columns" style="margin-top: 2%">
+            <p><b>Wil je experimenteren met Markdown?</b></p>
+            <p>Probeer onze <b><a href="tutorial/">10 minuten durende interactieve handleiding</a></b>, or <a href="https://spec.commonmark.org/dingus/">speel met de referentie CommenMark implementatie</a>.</p>
+        </div>
+
+        <div class="twelve columns">
+            <p><b>Meer details nodig?</b></p>
+            <p>Raadpleeg <a href="https://spec.commonmark.org">de officiële CommonMark specificatie</a>, of <a href="https://talk.commonmark.org">bespreek CommonMark met ons</a>.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
